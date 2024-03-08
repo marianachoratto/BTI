@@ -4,7 +4,7 @@
 
 Segue uma breve explicação sobre a resolução dos exercícios. Também existem comentários no código.
 
-Escolhi a linguagem python por ter mais afinidade.
+Escolhi a linguagem python por ter mais afinidade. E utilizei o Dbeaver, que é o programa que estou acostumada fazer planilhas SQL.
 
 ## Exercício 1
 
