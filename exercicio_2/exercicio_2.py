@@ -12,7 +12,7 @@ Demonstre:
 2 - Os comandos de banco de dados para operar (selects, inserts e updates)
 3 - O algoritmo do processo.
 '''
-#1) Criar banco de dados. Ele terá a coluna nomeUsuário e numeroDePassagens
+#1) Criar banco de dados. Ele terá a coluna nomeUsuário e data
 
 import sqlite3
 
@@ -26,7 +26,7 @@ cursor = conexao.cursor()
 
 # conexao.close()
 
-#2) fazer função do preço
+#2) fazer algoritmo do preço
 from datetime import datetime
 
 class Software:

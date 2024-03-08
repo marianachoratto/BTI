@@ -10,6 +10,7 @@ Gastei 37 reais, paguei com uma nota de 50, quais notas devem ser entregues para
 Crie um algoritmo de troco para um freeshop. Onde o valor recebido é em reais e o troco dado em dólares.'''
 
 #API para a cotação do dólar
+#Utilizou-se a biblioteca requests, pois é mais simples e não é necessário passar tantas linhas de código.
 import requests
 
 url = "https://economia.awesomeapi.com.br/json/last/USD-BRL"
@@ -17,8 +18,6 @@ url = "https://economia.awesomeapi.com.br/json/last/USD-BRL"
 response = requests.get(url)
 
 cotacao = float(response.json()['USDBRL']['bid'])
-# string_final = f'A cotação atual do dólar é de {cotacao:.2f}'
-# print(string_final)
 
 
 valorTotal = float(input('Digite o valor total da compra: '))
@@ -56,7 +55,7 @@ def notas_para_troco(trocoConvertido):
     #objetivo: escrever o troco no terminal
     lista_notas_filtrada = "O troco é de: "
     for item in lista_notas:
-    # determinar a quantidade (item[1]) da lista e o valor da nota (item[0])
+    # determinar a quantidade de notas (item[1]) da lista e o valor da nota (item[0])
         quantidade_notas = item[1]
         valor_da_nota = item[0]
         if quantidade_notas != 0: # checar se a nota ou moeda foi utilizada no troco
